@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  gpt-api-clone:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3003:3003"
+    volumes:
+      - .:/home/app

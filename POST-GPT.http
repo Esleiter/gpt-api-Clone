@@ -1,0 +1,9 @@
+POST https://api.openai.com/v1/engines/gpt-3.5-turbo-instruct/completions
+Content-Type: application/json
+Authorization: Bearer YOUR_API_KEY
+
+{
+  "prompt": "hi, how are you?",
+  "max_tokens": 20,
+  "temperature": 0.8
+}
