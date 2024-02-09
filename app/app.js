@@ -3,11 +3,10 @@ import corsMiddleware from "./middlewares/cors.js";
 import router from "./routes/index.js";
 
 const app = express();
-app.use(express.json());
 app.use(corsMiddleware);
+app.use(express.json());
 
-app.use("/", router);
-//app.post("/v1/engines/:model/completions", called);
+app.use("/v1/engines", router);
 
 const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
