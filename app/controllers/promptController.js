@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const postPrompt = async (req, res) => {
-  const uri = "http://host.docker.internal:11434/api/generate";
+  const uri = "http://ollama:11435/api/generate";
   const model = req.params.model;
   const postData = {
     model,

@@ -8,3 +8,13 @@ services:
       - "3003:3003"
     volumes:
       - .:/home/app
+
+  ollama-two:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-two:/root/.ollama
+
+volumes:
+  ollama-two:

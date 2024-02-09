@@ -1,4 +1,3 @@
-# docker-compose.yml
 version: '3.9'
 services:
   gpt-api-clone:
@@ -7,3 +6,12 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3003:3003"
+  ollama-two:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-two:/root/.ollama
+
+volumes:
+  ollama-two:
