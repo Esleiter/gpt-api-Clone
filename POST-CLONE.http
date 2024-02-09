@@ -1,4 +1,4 @@
-POST http://localhost:3003
+POST http://localhost:3003/v1/engines/codellama:7b/completions
 Content-Type: application/json
 Authorization: Bearer YOUR_API_KEY
 

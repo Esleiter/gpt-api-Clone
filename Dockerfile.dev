@@ -3,4 +3,4 @@ RUN npm i -g nodemon
 RUN mkdir -p /home/app
 WORKDIR /home/app
 EXPOSE 3003
-CMD ["nodemon", "index.js"]
+CMD ["nodemon", "app/app.js"]
