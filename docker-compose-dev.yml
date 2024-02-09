@@ -8,6 +8,8 @@ services:
       - "3003:3003"
     volumes:
       - .:/home/app
+    links:
+      - ollama-two
 
   ollama-two:
     image: ollama/ollama
