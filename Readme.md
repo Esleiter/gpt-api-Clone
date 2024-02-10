@@ -31,7 +31,18 @@ This command will start the services in a Docker container and run the downloadL
 curl -X POST http://localhost:3003/v1/engines/llama2/completions \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer YOUR_API_KEY_Authorization_ignored_for_now" \
-     -d '{"prompt": "hi, how are you?", "max_tokens": 20, "temperature": 0.8}'
+     -d '{"prompt": "hi, how are you?", "max_tokens": 15, "temperature": 0.8}'
+```
+
+#### Response
+
+```bash
+{
+     "model": "llama2",
+     "choices": [
+          {"text": "I don't have a physical body or personal experiences, so I cannot feel"}
+     ]
+}
 ```
 
 ### OpenAI API
@@ -40,5 +51,16 @@ curl -X POST http://localhost:3003/v1/engines/llama2/completions \
 curl -X POST https://api.openai.com/v1/engines/gpt-3.5-turbo-instruct/completions \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer YOUR_API_KEY" \
-     -d '{"prompt": "hi, how are you?", "max_tokens": 20, "temperature": 0.8}'
+     -d '{"prompt": "hi, how are you?", "max_tokens": 15, "temperature": 0.8}'
+```
+
+#### Response
+
+```bash
+{
+     "model": "gpt-3.5-turbo-instruct",
+     "choices": [
+          {"text": "\n\nI am an AI language model, so I don't have emotions or"}
+     ]
+}
 ```

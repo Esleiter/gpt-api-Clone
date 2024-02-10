@@ -5,6 +5,6 @@ Authorization: Bearer YOUR_API_KEY
 
 {
   "prompt": "hi, how are you?",
-  "max_tokens": 20,
+  "max_tokens": 15,
   "temperature": 0.8
 }
