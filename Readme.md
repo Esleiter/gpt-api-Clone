@@ -1,5 +1,7 @@
 # GPT API Clone
 
+![Docker Ollama OpenAI](https://raw.githubusercontent.com/Esleiter/gpt-api-Clone/main/img/docker-ollama-openai.png)
+
 This project uses Node.js and Express to provide completions functionality similar to the OpenAI API. This REST API service acts as a clone of the original functionality, using Ollama.
 
 ## Installation
